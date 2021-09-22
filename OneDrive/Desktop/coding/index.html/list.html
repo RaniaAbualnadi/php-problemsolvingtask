@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* (.class_name) this is class contains style*/
+      .menu-item {
+        background-color: rgb(175, 53, 53);
+        width: 10%;
+        margin: 5px;
+        color: white;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 2px 2px #25181833;
+      }
+
+      /* (element name) apply to all the elements with the same type */
+      li {
+        font-weight: bold;
+        color: gray;
+      }
+
+      /* (#element_ID) this will use and apply the style to the element with same ID */
+      #btnGoogle,
+      #btnYahoo {
+        text-decoration: none;
+        font-style: normal;
+      }
+
+      /* apply the style to all the div elements inside the class spcified */
+      .nav-container div {
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <nav style="margin: auto">
+        <!-- this is comment -->
+        <a id="btnGoogle" href="https://www.google.com/" target="">
+          <div class="menu-item">go to google</div>
+        </a>
+        <a id="btnYahoo" href="https://www.yahoo.com/" target="">
+          <div class="menu-item">go to yahoo</div>
+        </a>
+      </nav>
+    </div>
+    <ul>
+      <li>
+        Tree 1
+        <ul>
+          <li>Element 1</li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+          <li>Element 4</li>
+          <li>Element 5</li>
+        </ul>
+      </li>
+      <li>
+        Tree 2
+        <ul>
+          <li>
+            Element 1
+            <ol>
+              <li>sub item 1</li>
+              <li>sub item 2</li>
+              <li>sub item 3</li>
+            </ol>
+          </li>
+          <li>Element 2</li>
+          <li>Element 3</li>
+          <li>Element 4</li>
+          <li>Element 5</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
